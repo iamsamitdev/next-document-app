@@ -1,21 +1,22 @@
+import Link from 'next/link'
 const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="container">
-                <div className="logo">ReactJS</div>
+                <div className="logo"><Link href="/"><a>ReactJS</a></Link></div>
                 <div className="navleft">
                     <ul>
-                        <li>Docs</li>
-                        <li>Tutorial</li>
-                        <li>Blog</li>
-                        <li>Community</li>
+                        <li><Link href="/docs/getting-started"><a>Docs</a></Link></li>
+                        <li><Link href="/tutorial/tutorial"><a>Tutorial</a></Link></li>
+                        <li><Link href="/blog/blog"><a>Blog</a></Link></li>
+                        <li><Link href="/community/community"><a>Community</a></Link></li>
                     </ul>
                 </div>
                 <div className="navright">
                     <ul>
-                        <li>V17.0.3</li>
-                        <li>Languages</li>
-                        <li>Github</li>
+                        <li><Link href="/versions"><a>V17.0.3</a></Link></li>
+                        <li><Link href="/languages"><a>Languages</a></Link></li>
+                        <li><a href="https://github.com/facebook/react/" target="_blank">Github</a></li>
                     </ul>
                 </div>
             </div>
